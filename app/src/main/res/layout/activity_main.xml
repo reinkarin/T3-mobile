@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_form"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_nama_lengkap"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nama"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext" />
+
+        <TextView
+            android:id="@+id/tvErrorNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠ Nama tidak boleh kosong"
+            android:textColor="#D32F2F"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_jenis_kelamin"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_dashed_border"
+            android:padding="8dp"
+            android:layout_marginTop="8dp">
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_laki"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="16dp" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_perempuan"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_hobi"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp">
+
+            <CheckBox
+                android:id="@+id/cbMembaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_membaca"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbCoding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_coding"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbOlahraga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_olahraga"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTampilkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_tampilkan"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hasil_awal"
+            android:padding="16dp"
+            android:background="@drawable/border_result"
+            android:minHeight="100dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Form Identitas Mahasiswa</string>
+    <string name="title_form">Form Identitas Mahasiswa</string>
+    <string name="label_nama_lengkap">Nama Lengkap</string>
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="label_hobi">Hobi</string>
+    <string name="hint_nama">Masukkan nama...</string>
+    <string name="radio_laki">Laki-laki</string>
+    <string name="radio_perempuan">Perempuan</string>
+    <string name="checkbox_membaca">Membaca</string>
+    <string name="checkbox_coding">Coding</string>
+    <string name="checkbox_olahraga">Olahraga</string>
+    <string name="button_tampilkan">Tampilkan</string>
+    <string name="hasil_awal">Hasil akan muncul di sini...</string>
+    <string name="error_nama_kosong">Nama tidak boleh kosong</string>
+    <string name="error_nama_kosong_toast">Nama tidak boleh kosong!</string>
+    <string name="error_gender_kosong_toast">Jenis kelamin harus dipilih!</string>
+    <string name="error_data_tidak_lengkap">Data tidak lengkap!</string>
+    <string name="format_hasil">Nama : %s\nKelamin : %s\nHobi : %s</string>
+    <string name="hobi_kosong">-</string>
+</resources>
